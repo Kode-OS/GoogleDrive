@@ -25,9 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (passwordInput == ""){
                  passwordMissing1.style.display = 'block';
                  passwordMissing2.style.display = 'none';
+                 passwordNotValid1.style.display = 'none';
+                 passwordNotValid2.style.display = 'none';
             }else if (confirmPasswordInput == ""){
                 passwordMissing2.style.display = 'block';
                 passwordMissing1.style.display = 'none';
+                passwordNotValid1.style.display = 'none';
+                 passwordNotValid2.style.display = 'none';
             }else
             if (passwordInput === confirmPasswordInput) {
                 window.location.href = 'nextpage.html'; // Replace with the URL of the Login page and reset email to the new input 
